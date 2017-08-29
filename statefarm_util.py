@@ -40,7 +40,7 @@ def make_driver_folds(proot, num_folds):
 
 
 def make_test_classy(proot):
-  # os.makedirs(path.join(proot, 'test', 'unknown'))
+  os.makedirs(path.join(proot, 'test', 'unknown'))
   for img in os.listdir(path.join(proot, 'test')):
     if img == 'unknown':
       continue
